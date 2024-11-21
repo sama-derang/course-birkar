@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course | Birkar-Academy</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/course.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+</head>
+<body>
+    <header id="header">
+        <div class="header-d1">
+            <img  class="d-none d-sm-block d-md-none" src="./1bc7cd7ee9452884f132888c7b9c17f6 (1).png" alt="" style="width: 35px;">
+            <img src="./images/logo.png" alt="Birkar-logo">
+        <ul class="d-sm-none d-md-block">
+            <li><a href="#">صفحه اصلی</a></li>
+            <li><a href="#">دپارتمان ها</a></li>
+            <svg width="10" height="12" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect width="14" height="12" transform="matrix(0 1 1 0 0 0)" fill="url(#pattern0_40_183)" fill-opacity="0.65"/>
+                <defs>
+                <pattern id="pattern0_40_183" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_40_183" transform="matrix(0.02 0 0 0.0233333 0 -0.0833333)"/>
+                </pattern>
+                <image id="image0_40_183" width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAjklEQVR4nO3asQ3CQBAF0WliLdN/JyRImAgCygEhXUSO9HeZ18HXOPDpDiT9yhm4ARvNXYEX8Og+poD7GvMETjRWjglVlglVlglVlgllmVSWSWWZVJZJNarMto7LnzEHjY0YUl+f1k5DjkhhiRSWSGGJFJZIYYkUlkhR/oqHqAklWMfSEdfTlykPBqR/8Abo/nQfGMTYTAAAAABJRU5ErkJggg=="/>
+                </defs>
+            </svg>
+            <li><a href="#">مدارس تخصصی</a></li>
+            <svg width="10" height="12" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect width="14" height="12" transform="matrix(0 1 1 0 0 0)" fill="url(#pattern0_40_183)" fill-opacity="0.65"/>
+                <defs>
+                <pattern id="pattern0_40_183" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_40_183" transform="matrix(0.02 0 0 0.0233333 0 -0.0833333)"/>
+                </pattern>
+                <image id="image0_40_183" width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAjklEQVR4nO3asQ3CQBAF0WliLdN/JyRImAgCygEhXUSO9HeZ18HXOPDpDiT9yhm4ARvNXYEX8Og+poD7GvMETjRWjglVlglVlglVlgllmVSWSWWZVJZJNarMto7LnzEHjY0YUl+f1k5DjkhhiRSWSGGJFJZIYYkUlkhR/oqHqAklWMfSEdfTlykPBqR/8Abo/nQfGMTYTAAAAABJRU5ErkJggg=="/>
+                </defs>
+            </svg>
+            <li><a href="#">دوره آموزشی</a></li>
+            <li><a href="#">درباره ما</a></li>
+            <li><a href="#">ارتباط با ما</a></li>
+        </ul>
+        </div>
+
+        <div class="header-d2">
+            <input type="text" placeholder="جستجو دوره /تخصص">
+        <svg class="search-svg" width="20" height="18" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect width="25" height="23" fill="url(#pattern0_40_186)" fill-opacity="0.76"/>
+            <defs>
+            <pattern id="pattern0_40_186" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_40_186" transform="matrix(0.0208333 0 0 0.0226449 0 -0.0434783)"/>
+            </pattern>
+            <image id="image0_40_186" width="48" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC3klEQVR4nO1YPWtUQRQdFY3flSLEQkVEwQ8khWhjlSKCTdAtFEGxCBh4uzvnzBRp8qwUu+gfCCiCRkNaKyGNlonGD2KhItqliY0REpUru3p5vJjNZt5+xHfgNbv7zr3nzp2Zc9eYHDly5FgVALCD5BHn3CmSe6Io6jCtDGvtJgAXADwkOUvyZ/IBMEHyerlcPmxaBXEcrwVQAPA+LelFnh8kR5xz+5veJgDGF6n2DIApAM8AfATwPeU336y1l5qV/KGUqn8mOSDfJX8fx/Fm51wvgNHKCmghNxqafBRFOxPJz5MclCRred9ae4LkZEK8zT5zY0yhUFiXaJtZa23Pcnn6+/u3khzTRXDOdZusAeCqDgrgbL1cfX1960k+VXzT8pnJ8qgk+UkFHAzUjjNqP1wzWcE5d1EF+lJrzy8F6X9VlDchOBcL9EAFGgjFG8fxRgBfq9ze+4MmA6zRN2zaUbkSyMXGCrdzrmwy8jZ/LqnQ/CSLanXvZNH/x5SAF6H5SZ5X/I+yOIFOqgo9z4C/R/E/Cc1vSqXSXhXgQ5b3C4C7ofnlvO6oepiKMdsSkl/8EP8W6FZIbh1kQp0UvYG5p9QK1H27/xMyjKggo6F4nXPHVfXnoijabrKATFIAFqpDibjKELyyaZWAYZMlANxXwSbFVa6Ej+RltaoL1tqj4bJND7hPJiklYiyO4w11cp2WllFcQ6YRkDEwMVGNi6uso/Jzuvre+wOmUUgce7/thbhKMWY1bFjd8/qZ9t53NkxExQbPJ4SIqxwBULLWniN5BsAVkjdJvkwZ7BeaKsI51y1Bl/GXik58SNom5f3phoqQMVAmKZJva0he+n5YzGH1fUm26SKqkGFE/DyA2yQfV/r9ntgDuWG999tMClpKRL0oFou7ALxOtNo7a+1u0y4o5iJaBMXVsBI+ZWOLqKUuy5YX4b3vMu0E732naqdXbbUCVUjSUvm2TD5Hjhz/EX4B0bwdO9MojEIAAAAASUVORK5CYII="/>
+            </defs>
+        </svg>
+        <button class="btn-login" href="#">ورود/ثبت نام</button>
+        </div>
+    </header>
+
+    <div id="status-bar">
+        <ul>
+            <li><a href="#">مدارس تخصصی </a></li>
+            <li>
+                <svg width="13" height="15" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="15.9461" height="19.1212" transform="matrix(-0.999971 0.00758795 0.00758795 0.999971 15.9456 0)" fill="url(#pattern0_40_173)" fill-opacity="0.49"/>
+                    <defs>
+                    <pattern id="pattern0_40_173" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_40_173" transform="matrix(0.0239824 0 0 0.02 -0.0995589 0)"/>
+                    </pattern>
+                    <image id="image0_40_173" width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAjklEQVR4nO3asQ3CQBAF0WliLdN/JyRImAgCygEhXUSO9HeZ18HXOPDpDiT9yhm4ARvNXYEX8Og+poD7GvMETjRWjglVlglVlglVlgllmVSWSWWZVJZJNarMto7LnzEHjY0YUl+f1k5DjkhhiRSWSGGJFJZIYYkUlkhR/oqHqAklWMfSEdfTlykPBqR/8Abo/nQfGMTYTAAAAABJRU5ErkJggg=="/>
+                    </defs>
+                </svg>     
+            </li>
+            <li><a href="#">مدرسه هوش مصنوعی</a></li>
+            <li>
+                <svg width="13" height="15" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="15.9461" height="19.1212" transform="matrix(-0.999971 0.00758795 0.00758795 0.999971 15.9456 0)" fill="url(#pattern0_40_173)" fill-opacity="0.49"/>
+                    <defs>
+                    <pattern id="pattern0_40_173" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_40_173" transform="matrix(0.0239824 0 0 0.02 -0.0995589 0)"/>
+                    </pattern>
+                    <image id="image0_40_173" width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAjklEQVR4nO3asQ3CQBAF0WliLdN/JyRImAgCygEhXUSO9HeZ18HXOPDpDiT9yhm4ARvNXYEX8Og+poD7GvMETjRWjglVlglVlglVlgllmVSWSWWZVJZJNarMto7LnzEHjY0YUl+f1k5DjkhhiRSWSGGJFJZIYYkUlkhR/oqHqAklWMfSEdfTlykPBqR/8Abo/nQfGMTYTAAAAABJRU5ErkJggg=="/>
+                    </defs>
+                </svg>   
+            </li>
+            <li><a href="#">دوره پایتون</a></li>
+        </ul>
+    </div>
+
+    <div id="main">
+        <div id="main-banner" class="container-sm">
+            <div class="img-div row">
+                <div class="col-sm-12">
+                    <img src="./images/blueImage.png" alt="">
+                </div>
+                <div class="txt-div row">
+                    <div style="display: flex;" class="col-sm-12 align-items-center mt">
+                        <svg width="25" height="24" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="15.5" cy="15" rx="15.5" ry="15" fill="#09A7FF"/>
+                        </svg>
+                        <h2>آموزش پایتون</h2>
+                    </div>
+                    <div class="comment-text row ">
+                        <p class="col-sm-12 align-items-start">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از  طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و  سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه  درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با  نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان  خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید  داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات  پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="details-course row">
+            <div class="title-course col-sm-12">
+                <h3>مشخصات دوره</h3>
+            </div> 
+            <div class="d2 col-sm-12">
+                <p class="p-title">مدت زمان:</p>
+                <p class="p-answer">3</p>
+            </div>
+            <div class="d3 col-sm-12"> 
+                <p class="p-title">سطح:</p>
+                <p class="p-answer">مقدماتی</p>
+            </div>
+            <div class="d4 col-sm-12">
+                <p class="p-title">مدرک:</p>
+                <p class="p-answer">دارای مدرک</p>
+            </div>
+            <div class="d5 col-sm-12">
+                <p class="p-title">قالب دوره:</p>
+                <p class="p-answer">آنلاین</p>
+            </div>
+        </div>
+    </div>
+     
+    <div id="Contents">
+        <div class="title-course">
+            <div class="title-course-txt">
+                <svg width="27" height="27" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="15.5" cy="15" rx="15.5" ry="15" fill="#C6E7FF"/>
+                </svg>
+                <h4>مطالب دوره</h4>  
+            </div>
+            <div class="learn-course">
+                <h5>1.آموزش پایتون</h5>
+                <div class="learn-course-video">
+                    <div class="parent-video">
+                        <div class="first-child">
+                            <svg width="15" height="20" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="18" height="22" fill="url(#pattern0_40_222)"/>
+                                <defs>
+                                <pattern id="pattern0_40_222" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_40_222" transform="matrix(0.0244444 0 0 0.02 -0.111111 0)"/>
+                                </pattern>
+                                <image id="image0_40_222" width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACOUlEQVR4nO1YzWoUQRAuEGSW+b7Z5BACkmgOkocwPoCeBA/Rd/APX0HR6EFzFsFbVHwA9VEWvGk0OaugsFW29GQmyGbNOLvza/qDugzb1f1VfVVd2yIBAf2AW1w8q0lyy4D3CowU+J7ZKP2WJDddFK1KV+EGgxUjnympRrrjTEkz8o0bDtekSxgDV33Us0P+MGBH43jTketueTlOjVzXOL5mwEslf6a/Bb6NgSvSBSh5V8lfabSBHS+tojVuYeGcka/y7Ch5R1rPBNODjDWOb5Rd72spXUtaa5lxUbR6KKcZSORQ8nYms69uMDgjTcOAF7mc5vZFvs4awXNpvMWS6gv7X2qi0N9wuOYbgJLqu580hfSeqCgbOQ6LP55dpuU3Bd5lm25W5VPj+HoWnLdV+SzeFPjgN3VJcr4qn/6esYOiH0lT8BdZSmRpCVX59L4suySlKeSjRl/8/hWBSAEsZOQkSMuJnDbysZJfiv5f1G1KfjZyy59plug8apuAHbWHpYlkUXCOvCAtwwEbeWa630HqOo8FIvXAQkYYaqQWWJAW55OWE4kM2FZyL50OgKf+W+8yYsD2kZsZeNI7IkruTZmZ9vtI5NMUIh/7Jy3y/pSh717viDiRU5NE/Ldetl+bIFKFL2ls4f9IRP8o+HkKvXUiY/KyJ+BtnCSX5vFlYURhmH5rgQVpMUirFtiJl5bmD3TAhrQMB1zMLtXd0ov9W2sHnkjdhD0oH4WDR+ytPDNtms+EJ3HcI/ZvW1RUvf6uGLgAAAAASUVORK5CYII="/>
+                                </defs>
+                            </svg>
+                            <p>1.1  آشنایی با پایتون</p>    
+                        </div>
+                        <div class="seconed-child">
+                            <p>30:22</p>
+                            <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="18" height="16" fill="url(#pattern0_45_241)" fill-opacity="0.6"/>
+                                <defs>
+                                <pattern id="pattern0_45_241" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_45_241" transform="matrix(0.0208333 0 0 0.0234375 0 -0.0625)"/>
+                                </pattern>
+                                <image id="image0_45_241" width="48" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC6ElEQVR4nO2Z30pUURTGf4wnRZqLbPQi9SlqSp+giJluRKKbsrcwi/ImE4Iw0+gmaUi6KiHqASp8gsQrtYsyUvvjXYx2Y2xYBxabg519zp6zDeaDjYPD+tb6ztl7rz8DbbTRhg+UgGHgJrAErAK7wB9Zu/K/V8AEMCQ2wTEITANfgQPHtQncAwZCBF4BngD7GQK31x7wGDhZVPBXgJ8JgXwDngJXgdMi8pisXuAMcA1YALYS7H8Al1sZeCRP3Xb8DqgBHY5cdeB9At+8fO8V3cBby9EacN4D90Vg3eJ+Iz69IEoIvgEc9+UAKAPPE0R4eRP2trlN63DH8jXn48BmCf4B0ATuexAxSkZUrNvGbJu0iK9X8zcLFpXf70BP3q2z5rjn9RPMeiY28mylQStJXXC0zysgvp10suvHAdPWPU8AAQYfFM8UKdFh1TYmSYUSUFc8n9MWgMNWeRAFFBAB24rrXBqjW8rA1DYEFGDwTHGNkwJLysAUZqEFjCmul2kMVpWBqSpDC6gqrpU0Br+UgUlmoQX0WSX3P6Hv/04PAvK2jl1WPihEgOZYyCmiy1WAjy30yHoLeUT0uW4hfYhNG5gFJQnah4izrodYX6OmhyWwiOuu1+iE5RDPImYcORquiWxIGWx5aOtsEb8dbCNgR9lW0zrczFnMJXHOyC1iKt20uJSlmEMmZrGhGX2EwrKK466L4YA8rdjYNBdFo6b8N10bGmTcFxOsS5tXFMrAJ+V/NgtJRRJHTGLmNkXhhfK7k7WpR2aV+go0I49WY9LyOZKXcL5AEZOWr4c+SCMZ82niRc9nomxtG7NeOw6MD0V3gogNT7dTzTqwcfDehrv6TcxZjg5k9FF3zNiRJKnlBL5Zn08+CaNWeo/XtjTgY5Lye6Wf6JTPVSnMGofYj1AQeuRt6GSXdTXlqZ8gAPplYvYlQ+CmtjHlwSmOAEoydLohNfuKdHb7ssznj/LduDQpR+Jn1jba4D/HX/QMlsIw8TX3AAAAAElFTkSuQmCC"/>
+                                </defs>
+                            </svg>
+                        </div>   
+                    </div>
+                    <div class="parent-video">
+                        <div class="first-child">
+                            <svg width="15" height="20" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="18" height="22" fill="url(#pattern0_40_222)"/>
+                                <defs>
+                                <pattern id="pattern0_40_222" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_40_222" transform="matrix(0.0244444 0 0 0.02 -0.111111 0)"/>
+                                </pattern>
+                                <image id="image0_40_222" width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACOUlEQVR4nO1YzWoUQRAuEGSW+b7Z5BACkmgOkocwPoCeBA/Rd/APX0HR6EFzFsFbVHwA9VEWvGk0OaugsFW29GQmyGbNOLvza/qDugzb1f1VfVVd2yIBAf2AW1w8q0lyy4D3CowU+J7ZKP2WJDddFK1KV+EGgxUjnympRrrjTEkz8o0bDtekSxgDV33Us0P+MGBH43jTketueTlOjVzXOL5mwEslf6a/Bb6NgSvSBSh5V8lfabSBHS+tojVuYeGcka/y7Ch5R1rPBNODjDWOb5Rd72spXUtaa5lxUbR6KKcZSORQ8nYms69uMDgjTcOAF7mc5vZFvs4awXNpvMWS6gv7X2qi0N9wuOYbgJLqu580hfSeqCgbOQ6LP55dpuU3Bd5lm25W5VPj+HoWnLdV+SzeFPjgN3VJcr4qn/6esYOiH0lT8BdZSmRpCVX59L4suySlKeSjRl/8/hWBSAEsZOQkSMuJnDbysZJfiv5f1G1KfjZyy59plug8apuAHbWHpYlkUXCOvCAtwwEbeWa630HqOo8FIvXAQkYYaqQWWJAW55OWE4kM2FZyL50OgKf+W+8yYsD2kZsZeNI7IkruTZmZ9vtI5NMUIh/7Jy3y/pSh717viDiRU5NE/Ldetl+bIFKFL2ls4f9IRP8o+HkKvXUiY/KyJ+BtnCSX5vFlYURhmH5rgQVpMUirFtiJl5bmD3TAhrQMB1zMLtXd0ov9W2sHnkjdhD0oH4WDR+ytPDNtms+EJ3HcI/ZvW1RUvf6uGLgAAAAASUVORK5CYII="/>
+                                </defs>
+                            </svg>
+                            <p>1.1  آشنایی با پایتون</p>    
+                        </div>
+                        <div class="seconed-child">
+                            <p>30:22</p>
+                            <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="18" height="16" fill="url(#pattern0_45_241)" fill-opacity="0.6"/>
+                                <defs>
+                                <pattern id="pattern0_45_241" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_45_241" transform="matrix(0.0208333 0 0 0.0234375 0 -0.0625)"/>
+                                </pattern>
+                                <image id="image0_45_241" width="48" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC6ElEQVR4nO2Z30pUURTGf4wnRZqLbPQi9SlqSp+giJluRKKbsrcwi/ImE4Iw0+gmaUi6KiHqASp8gsQrtYsyUvvjXYx2Y2xYBxabg519zp6zDeaDjYPD+tb6ztl7rz8DbbTRhg+UgGHgJrAErAK7wB9Zu/K/V8AEMCQ2wTEITANfgQPHtQncAwZCBF4BngD7GQK31x7wGDhZVPBXgJ8JgXwDngJXgdMi8pisXuAMcA1YALYS7H8Al1sZeCRP3Xb8DqgBHY5cdeB9At+8fO8V3cBby9EacN4D90Vg3eJ+Iz69IEoIvgEc9+UAKAPPE0R4eRP2trlN63DH8jXn48BmCf4B0ATuexAxSkZUrNvGbJu0iK9X8zcLFpXf70BP3q2z5rjn9RPMeiY28mylQStJXXC0zysgvp10suvHAdPWPU8AAQYfFM8UKdFh1TYmSYUSUFc8n9MWgMNWeRAFFBAB24rrXBqjW8rA1DYEFGDwTHGNkwJLysAUZqEFjCmul2kMVpWBqSpDC6gqrpU0Br+UgUlmoQX0WSX3P6Hv/04PAvK2jl1WPihEgOZYyCmiy1WAjy30yHoLeUT0uW4hfYhNG5gFJQnah4izrodYX6OmhyWwiOuu1+iE5RDPImYcORquiWxIGWx5aOtsEb8dbCNgR9lW0zrczFnMJXHOyC1iKt20uJSlmEMmZrGhGX2EwrKK466L4YA8rdjYNBdFo6b8N10bGmTcFxOsS5tXFMrAJ+V/NgtJRRJHTGLmNkXhhfK7k7WpR2aV+go0I49WY9LyOZKXcL5AEZOWr4c+SCMZ82niRc9nomxtG7NeOw6MD0V3gogNT7dTzTqwcfDehrv6TcxZjg5k9FF3zNiRJKnlBL5Zn08+CaNWeo/XtjTgY5Lye6Wf6JTPVSnMGofYj1AQeuRt6GSXdTXlqZ8gAPplYvYlQ+CmtjHlwSmOAEoydLohNfuKdHb7ssznj/LduDQpR+Jn1jba4D/HX/QMlsIw8TX3AAAAAElFTkSuQmCC"/>
+                                </defs>
+                            </svg>
+                        </div> 
+                    </div>
+                    <div class="parent-video">
+                        <div class="first-child">
+                            <svg width="15" height="20" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="18" height="22" fill="url(#pattern0_40_222)"/>
+                                <defs>
+                                <pattern id="pattern0_40_222" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_40_222" transform="matrix(0.0244444 0 0 0.02 -0.111111 0)"/>
+                                </pattern>
+                                <image id="image0_40_222" width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACOUlEQVR4nO1YzWoUQRAuEGSW+b7Z5BACkmgOkocwPoCeBA/Rd/APX0HR6EFzFsFbVHwA9VEWvGk0OaugsFW29GQmyGbNOLvza/qDugzb1f1VfVVd2yIBAf2AW1w8q0lyy4D3CowU+J7ZKP2WJDddFK1KV+EGgxUjnympRrrjTEkz8o0bDtekSxgDV33Us0P+MGBH43jTketueTlOjVzXOL5mwEslf6a/Bb6NgSvSBSh5V8lfabSBHS+tojVuYeGcka/y7Ch5R1rPBNODjDWOb5Rd72spXUtaa5lxUbR6KKcZSORQ8nYms69uMDgjTcOAF7mc5vZFvs4awXNpvMWS6gv7X2qi0N9wuOYbgJLqu580hfSeqCgbOQ6LP55dpuU3Bd5lm25W5VPj+HoWnLdV+SzeFPjgN3VJcr4qn/6esYOiH0lT8BdZSmRpCVX59L4suySlKeSjRl/8/hWBSAEsZOQkSMuJnDbysZJfiv5f1G1KfjZyy59plug8apuAHbWHpYlkUXCOvCAtwwEbeWa630HqOo8FIvXAQkYYaqQWWJAW55OWE4kM2FZyL50OgKf+W+8yYsD2kZsZeNI7IkruTZmZ9vtI5NMUIh/7Jy3y/pSh717viDiRU5NE/Ldetl+bIFKFL2ls4f9IRP8o+HkKvXUiY/KyJ+BtnCSX5vFlYURhmH5rgQVpMUirFtiJl5bmD3TAhrQMB1zMLtXd0ov9W2sHnkjdhD0oH4WDR+ytPDNtms+EJ3HcI/ZvW1RUvf6uGLgAAAAASUVORK5CYII="/>
+                                </defs>
+                            </svg>
+                            <p>1.1  آشنایی با پایتون</p>    
+                        </div>
+                        <div class="seconed-child">
+                            <p>30:22</p>
+                            <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="18" height="16" fill="url(#pattern0_45_241)" fill-opacity="0.6"/>
+                                <defs>
+                                <pattern id="pattern0_45_241" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_45_241" transform="matrix(0.0208333 0 0 0.0234375 0 -0.0625)"/>
+                                </pattern>
+                                <image id="image0_45_241" width="48" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC6ElEQVR4nO2Z30pUURTGf4wnRZqLbPQi9SlqSp+giJluRKKbsrcwi/ImE4Iw0+gmaUi6KiHqASp8gsQrtYsyUvvjXYx2Y2xYBxabg519zp6zDeaDjYPD+tb6ztl7rz8DbbTRhg+UgGHgJrAErAK7wB9Zu/K/V8AEMCQ2wTEITANfgQPHtQncAwZCBF4BngD7GQK31x7wGDhZVPBXgJ8JgXwDngJXgdMi8pisXuAMcA1YALYS7H8Al1sZeCRP3Xb8DqgBHY5cdeB9At+8fO8V3cBby9EacN4D90Vg3eJ+Iz69IEoIvgEc9+UAKAPPE0R4eRP2trlN63DH8jXn48BmCf4B0ATuexAxSkZUrNvGbJu0iK9X8zcLFpXf70BP3q2z5rjn9RPMeiY28mylQStJXXC0zysgvp10suvHAdPWPU8AAQYfFM8UKdFh1TYmSYUSUFc8n9MWgMNWeRAFFBAB24rrXBqjW8rA1DYEFGDwTHGNkwJLysAUZqEFjCmul2kMVpWBqSpDC6gqrpU0Br+UgUlmoQX0WSX3P6Hv/04PAvK2jl1WPihEgOZYyCmiy1WAjy30yHoLeUT0uW4hfYhNG5gFJQnah4izrodYX6OmhyWwiOuu1+iE5RDPImYcORquiWxIGWx5aOtsEb8dbCNgR9lW0zrczFnMJXHOyC1iKt20uJSlmEMmZrGhGX2EwrKK466L4YA8rdjYNBdFo6b8N10bGmTcFxOsS5tXFMrAJ+V/NgtJRRJHTGLmNkXhhfK7k7WpR2aV+go0I49WY9LyOZKXcL5AEZOWr4c+SCMZ82niRc9nomxtG7NeOw6MD0V3gogNT7dTzTqwcfDehrv6TcxZjg5k9FF3zNiRJKnlBL5Zn08+CaNWeo/XtjTgY5Lye6Wf6JTPVSnMGofYj1AQeuRt6GSXdTXlqZ8gAPplYvYlQ+CmtjHlwSmOAEoydLohNfuKdHb7ssznj/LduDQpR+Jn1jba4D/HX/QMlsIw8TX3AAAAAElFTkSuQmCC"/>
+                                </defs>
+                            </svg>
+                        </div> 
+                    </div>
+                    <div class="parent-video">
+                        <div class="first-child">
+                            <svg width="15" height="20" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="18" height="22" fill="url(#pattern0_40_222)"/>
+                                <defs>
+                                <pattern id="pattern0_40_222" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_40_222" transform="matrix(0.0244444 0 0 0.02 -0.111111 0)"/>
+                                </pattern>
+                                <image id="image0_40_222" width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACOUlEQVR4nO1YzWoUQRAuEGSW+b7Z5BACkmgOkocwPoCeBA/Rd/APX0HR6EFzFsFbVHwA9VEWvGk0OaugsFW29GQmyGbNOLvza/qDugzb1f1VfVVd2yIBAf2AW1w8q0lyy4D3CowU+J7ZKP2WJDddFK1KV+EGgxUjnympRrrjTEkz8o0bDtekSxgDV33Us0P+MGBH43jTketueTlOjVzXOL5mwEslf6a/Bb6NgSvSBSh5V8lfabSBHS+tojVuYeGcka/y7Ch5R1rPBNODjDWOb5Rd72spXUtaa5lxUbR6KKcZSORQ8nYms69uMDgjTcOAF7mc5vZFvs4awXNpvMWS6gv7X2qi0N9wuOYbgJLqu580hfSeqCgbOQ6LP55dpuU3Bd5lm25W5VPj+HoWnLdV+SzeFPjgN3VJcr4qn/6esYOiH0lT8BdZSmRpCVX59L4suySlKeSjRl/8/hWBSAEsZOQkSMuJnDbysZJfiv5f1G1KfjZyy59plug8apuAHbWHpYlkUXCOvCAtwwEbeWa630HqOo8FIvXAQkYYaqQWWJAW55OWE4kM2FZyL50OgKf+W+8yYsD2kZsZeNI7IkruTZmZ9vtI5NMUIh/7Jy3y/pSh717viDiRU5NE/Ldetl+bIFKFL2ls4f9IRP8o+HkKvXUiY/KyJ+BtnCSX5vFlYURhmH5rgQVpMUirFtiJl5bmD3TAhrQMB1zMLtXd0ov9W2sHnkjdhD0oH4WDR+ytPDNtms+EJ3HcI/ZvW1RUvf6uGLgAAAAASUVORK5CYII="/>
+                                </defs>
+                            </svg>
+                            <p>1.1  آشنایی با پایتون</p>    
+                        </div>
+                        <div class="seconed-child">
+                            <p>30:22</p>
+                            <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="18" height="16" fill="url(#pattern0_45_241)" fill-opacity="0.6"/>
+                                <defs>
+                                <pattern id="pattern0_45_241" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_45_241" transform="matrix(0.0208333 0 0 0.0234375 0 -0.0625)"/>
+                                </pattern>
+                                <image id="image0_45_241" width="48" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC6ElEQVR4nO2Z30pUURTGf4wnRZqLbPQi9SlqSp+giJluRKKbsrcwi/ImE4Iw0+gmaUi6KiHqASp8gsQrtYsyUvvjXYx2Y2xYBxabg519zp6zDeaDjYPD+tb6ztl7rz8DbbTRhg+UgGHgJrAErAK7wB9Zu/K/V8AEMCQ2wTEITANfgQPHtQncAwZCBF4BngD7GQK31x7wGDhZVPBXgJ8JgXwDngJXgdMi8pisXuAMcA1YALYS7H8Al1sZeCRP3Xb8DqgBHY5cdeB9At+8fO8V3cBby9EacN4D90Vg3eJ+Iz69IEoIvgEc9+UAKAPPE0R4eRP2trlN63DH8jXn48BmCf4B0ATuexAxSkZUrNvGbJu0iK9X8zcLFpXf70BP3q2z5rjn9RPMeiY28mylQStJXXC0zysgvp10suvHAdPWPU8AAQYfFM8UKdFh1TYmSYUSUFc8n9MWgMNWeRAFFBAB24rrXBqjW8rA1DYEFGDwTHGNkwJLysAUZqEFjCmul2kMVpWBqSpDC6gqrpU0Br+UgUlmoQX0WSX3P6Hv/04PAvK2jl1WPihEgOZYyCmiy1WAjy30yHoLeUT0uW4hfYhNG5gFJQnah4izrodYX6OmhyWwiOuu1+iE5RDPImYcORquiWxIGWx5aOtsEb8dbCNgR9lW0zrczFnMJXHOyC1iKt20uJSlmEMmZrGhGX2EwrKK466L4YA8rdjYNBdFo6b8N10bGmTcFxOsS5tXFMrAJ+V/NgtJRRJHTGLmNkXhhfK7k7WpR2aV+go0I49WY9LyOZKXcL5AEZOWr4c+SCMZ82niRc9nomxtG7NeOw6MD0V3gogNT7dTzTqwcfDehrv6TcxZjg5k9FF3zNiRJKnlBL5Zn08+CaNWeo/XtjTgY5Lye6Wf6JTPVSnMGofYj1AQeuRt6GSXdTXlqZ8gAPplYvYlQ+CmtjHlwSmOAEoydLohNfuKdHb7ssznj/LduDQpR+Jn1jba4D/HX/QMlsIw8TX3AAAAAElFTkSuQmCC"/>
+                                </defs>
+                            </svg>
+                        </div> 
+                    </div>
+                    <div class="parent-video">
+                        <div class="first-child">
+                            <svg width="15" height="20" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="18" height="22" fill="url(#pattern0_40_222)"/>
+                                <defs>
+                                <pattern id="pattern0_40_222" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_40_222" transform="matrix(0.0244444 0 0 0.02 -0.111111 0)"/>
+                                </pattern>
+                                <image id="image0_40_222" width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACOUlEQVR4nO1YzWoUQRAuEGSW+b7Z5BACkmgOkocwPoCeBA/Rd/APX0HR6EFzFsFbVHwA9VEWvGk0OaugsFW29GQmyGbNOLvza/qDugzb1f1VfVVd2yIBAf2AW1w8q0lyy4D3CowU+J7ZKP2WJDddFK1KV+EGgxUjnympRrrjTEkz8o0bDtekSxgDV33Us0P+MGBH43jTketueTlOjVzXOL5mwEslf6a/Bb6NgSvSBSh5V8lfabSBHS+tojVuYeGcka/y7Ch5R1rPBNODjDWOb5Rd72spXUtaa5lxUbR6KKcZSORQ8nYms69uMDgjTcOAF7mc5vZFvs4awXNpvMWS6gv7X2qi0N9wuOYbgJLqu580hfSeqCgbOQ6LP55dpuU3Bd5lm25W5VPj+HoWnLdV+SzeFPjgN3VJcr4qn/6esYOiH0lT8BdZSmRpCVX59L4suySlKeSjRl/8/hWBSAEsZOQkSMuJnDbysZJfiv5f1G1KfjZyy59plug8apuAHbWHpYlkUXCOvCAtwwEbeWa630HqOo8FIvXAQkYYaqQWWJAW55OWE4kM2FZyL50OgKf+W+8yYsD2kZsZeNI7IkruTZmZ9vtI5NMUIh/7Jy3y/pSh717viDiRU5NE/Ldetl+bIFKFL2ls4f9IRP8o+HkKvXUiY/KyJ+BtnCSX5vFlYURhmH5rgQVpMUirFtiJl5bmD3TAhrQMB1zMLtXd0ov9W2sHnkjdhD0oH4WDR+ytPDNtms+EJ3HcI/ZvW1RUvf6uGLgAAAAASUVORK5CYII="/>
+                                </defs>
+                            </svg>
+                            <p>1.1  آشنایی با پایتون</p>    
+                        </div>
+                        <div class="seconed-child">
+                            <p>30:22</p>
+                            <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="18" height="16" fill="url(#pattern0_45_241)" fill-opacity="0.6"/>
+                                <defs>
+                                <pattern id="pattern0_45_241" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_45_241" transform="matrix(0.0208333 0 0 0.0234375 0 -0.0625)"/>
+                                </pattern>
+                                <image id="image0_45_241" width="48" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC6ElEQVR4nO2Z30pUURTGf4wnRZqLbPQi9SlqSp+giJluRKKbsrcwi/ImE4Iw0+gmaUi6KiHqASp8gsQrtYsyUvvjXYx2Y2xYBxabg519zp6zDeaDjYPD+tb6ztl7rz8DbbTRhg+UgGHgJrAErAK7wB9Zu/K/V8AEMCQ2wTEITANfgQPHtQncAwZCBF4BngD7GQK31x7wGDhZVPBXgJ8JgXwDngJXgdMi8pisXuAMcA1YALYS7H8Al1sZeCRP3Xb8DqgBHY5cdeB9At+8fO8V3cBby9EacN4D90Vg3eJ+Iz69IEoIvgEc9+UAKAPPE0R4eRP2trlN63DH8jXn48BmCf4B0ATuexAxSkZUrNvGbJu0iK9X8zcLFpXf70BP3q2z5rjn9RPMeiY28mylQStJXXC0zysgvp10suvHAdPWPU8AAQYfFM8UKdFh1TYmSYUSUFc8n9MWgMNWeRAFFBAB24rrXBqjW8rA1DYEFGDwTHGNkwJLysAUZqEFjCmul2kMVpWBqSpDC6gqrpU0Br+UgUlmoQX0WSX3P6Hv/04PAvK2jl1WPihEgOZYyCmiy1WAjy30yHoLeUT0uW4hfYhNG5gFJQnah4izrodYX6OmhyWwiOuu1+iE5RDPImYcORquiWxIGWx5aOtsEb8dbCNgR9lW0zrczFnMJXHOyC1iKt20uJSlmEMmZrGhGX2EwrKK466L4YA8rdjYNBdFo6b8N10bGmTcFxOsS5tXFMrAJ+V/NgtJRRJHTGLmNkXhhfK7k7WpR2aV+go0I49WY9LyOZKXcL5AEZOWr4c+SCMZ82niRc9nomxtG7NeOw6MD0V3gogNT7dTzTqwcfDehrv6TcxZjg5k9FF3zNiRJKnlBL5Zn08+CaNWeo/XtjTgY5Lye6Wf6JTPVSnMGofYj1AQeuRt6GSXdTXlqZ8gAPplYvYlQ+CmtjHlwSmOAEoydLohNfuKdHb7ssznj/LduDQpR+Jn1jba4D/HX/QMlsIw8TX3AAAAAElFTkSuQmCC"/>
+                                </defs>
+                            </svg>
+                        </div> 
+                    </div>
+                    <div class="parent-video">
+                        <div class="first-child">
+                            <svg width="15" height="20" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="18" height="22" fill="url(#pattern0_40_222)"/>
+                                <defs>
+                                <pattern id="pattern0_40_222" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_40_222" transform="matrix(0.0244444 0 0 0.02 -0.111111 0)"/>
+                                </pattern>
+                                <image id="image0_40_222" width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACOUlEQVR4nO1YzWoUQRAuEGSW+b7Z5BACkmgOkocwPoCeBA/Rd/APX0HR6EFzFsFbVHwA9VEWvGk0OaugsFW29GQmyGbNOLvza/qDugzb1f1VfVVd2yIBAf2AW1w8q0lyy4D3CowU+J7ZKP2WJDddFK1KV+EGgxUjnympRrrjTEkz8o0bDtekSxgDV33Us0P+MGBH43jTketueTlOjVzXOL5mwEslf6a/Bb6NgSvSBSh5V8lfabSBHS+tojVuYeGcka/y7Ch5R1rPBNODjDWOb5Rd72spXUtaa5lxUbR6KKcZSORQ8nYms69uMDgjTcOAF7mc5vZFvs4awXNpvMWS6gv7X2qi0N9wuOYbgJLqu580hfSeqCgbOQ6LP55dpuU3Bd5lm25W5VPj+HoWnLdV+SzeFPjgN3VJcr4qn/6esYOiH0lT8BdZSmRpCVX59L4suySlKeSjRl/8/hWBSAEsZOQkSMuJnDbysZJfiv5f1G1KfjZyy59plug8apuAHbWHpYlkUXCOvCAtwwEbeWa630HqOo8FIvXAQkYYaqQWWJAW55OWE4kM2FZyL50OgKf+W+8yYsD2kZsZeNI7IkruTZmZ9vtI5NMUIh/7Jy3y/pSh717viDiRU5NE/Ldetl+bIFKFL2ls4f9IRP8o+HkKvXUiY/KyJ+BtnCSX5vFlYURhmH5rgQVpMUirFtiJl5bmD3TAhrQMB1zMLtXd0ov9W2sHnkjdhD0oH4WDR+ytPDNtms+EJ3HcI/ZvW1RUvf6uGLgAAAAASUVORK5CYII="/>
+                                </defs>
+                            </svg>
+                            <p>1.1  آشنایی با پایتون</p>    
+                        </div>
+                        <div class="seconed-child">
+                            <p>30:22</p>
+                            <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="18" height="16" fill="url(#pattern0_45_241)" fill-opacity="0.6"/>
+                                <defs>
+                                <pattern id="pattern0_45_241" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_45_241" transform="matrix(0.0208333 0 0 0.0234375 0 -0.0625)"/>
+                                </pattern>
+                                <image id="image0_45_241" width="48" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC6ElEQVR4nO2Z30pUURTGf4wnRZqLbPQi9SlqSp+giJluRKKbsrcwi/ImE4Iw0+gmaUi6KiHqASp8gsQrtYsyUvvjXYx2Y2xYBxabg519zp6zDeaDjYPD+tb6ztl7rz8DbbTRhg+UgGHgJrAErAK7wB9Zu/K/V8AEMCQ2wTEITANfgQPHtQncAwZCBF4BngD7GQK31x7wGDhZVPBXgJ8JgXwDngJXgdMi8pisXuAMcA1YALYS7H8Al1sZeCRP3Xb8DqgBHY5cdeB9At+8fO8V3cBby9EacN4D90Vg3eJ+Iz69IEoIvgEc9+UAKAPPE0R4eRP2trlN63DH8jXn48BmCf4B0ATuexAxSkZUrNvGbJu0iK9X8zcLFpXf70BP3q2z5rjn9RPMeiY28mylQStJXXC0zysgvp10suvHAdPWPU8AAQYfFM8UKdFh1TYmSYUSUFc8n9MWgMNWeRAFFBAB24rrXBqjW8rA1DYEFGDwTHGNkwJLysAUZqEFjCmul2kMVpWBqSpDC6gqrpU0Br+UgUlmoQX0WSX3P6Hv/04PAvK2jl1WPihEgOZYyCmiy1WAjy30yHoLeUT0uW4hfYhNG5gFJQnah4izrodYX6OmhyWwiOuu1+iE5RDPImYcORquiWxIGWx5aOtsEb8dbCNgR9lW0zrczFnMJXHOyC1iKt20uJSlmEMmZrGhGX2EwrKK466L4YA8rdjYNBdFo6b8N10bGmTcFxOsS5tXFMrAJ+V/NgtJRRJHTGLmNkXhhfK7k7WpR2aV+go0I49WY9LyOZKXcL5AEZOWr4c+SCMZ82niRc9nomxtG7NeOw6MD0V3gogNT7dTzTqwcfDehrv6TcxZjg5k9FF3zNiRJKnlBL5Zn08+CaNWeo/XtjTgY5Lye6Wf6JTPVSnMGofYj1AQeuRt6GSXdTXlqZ8gAPplYvYlQ+CmtjHlwSmOAEoydLohNfuKdHb7ssznj/LduDQpR+Jn1jba4D/HX/QMlsIw8TX3AAAAAElFTkSuQmCC"/>
+                                </defs>
+                            </svg>
+                        </div> 
+                    </div>
+                    <div class="parent-video">
+                        <div class="first-child">
+                            <svg width="15" height="20" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="18" height="22" fill="url(#pattern0_40_222)"/>
+                                <defs>
+                                <pattern id="pattern0_40_222" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_40_222" transform="matrix(0.0244444 0 0 0.02 -0.111111 0)"/>
+                                </pattern>
+                                <image id="image0_40_222" width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACOUlEQVR4nO1YzWoUQRAuEGSW+b7Z5BACkmgOkocwPoCeBA/Rd/APX0HR6EFzFsFbVHwA9VEWvGk0OaugsFW29GQmyGbNOLvza/qDugzb1f1VfVVd2yIBAf2AW1w8q0lyy4D3CowU+J7ZKP2WJDddFK1KV+EGgxUjnympRrrjTEkz8o0bDtekSxgDV33Us0P+MGBH43jTketueTlOjVzXOL5mwEslf6a/Bb6NgSvSBSh5V8lfabSBHS+tojVuYeGcka/y7Ch5R1rPBNODjDWOb5Rd72spXUtaa5lxUbR6KKcZSORQ8nYms69uMDgjTcOAF7mc5vZFvs4awXNpvMWS6gv7X2qi0N9wuOYbgJLqu580hfSeqCgbOQ6LP55dpuU3Bd5lm25W5VPj+HoWnLdV+SzeFPjgN3VJcr4qn/6esYOiH0lT8BdZSmRpCVX59L4suySlKeSjRl/8/hWBSAEsZOQkSMuJnDbysZJfiv5f1G1KfjZyy59plug8apuAHbWHpYlkUXCOvCAtwwEbeWa630HqOo8FIvXAQkYYaqQWWJAW55OWE4kM2FZyL50OgKf+W+8yYsD2kZsZeNI7IkruTZmZ9vtI5NMUIh/7Jy3y/pSh717viDiRU5NE/Ldetl+bIFKFL2ls4f9IRP8o+HkKvXUiY/KyJ+BtnCSX5vFlYURhmH5rgQVpMUirFtiJl5bmD3TAhrQMB1zMLtXd0ov9W2sHnkjdhD0oH4WDR+ytPDNtms+EJ3HcI/ZvW1RUvf6uGLgAAAAASUVORK5CYII="/>
+                                </defs>
+                            </svg>
+                            <p>1.1  آشنایی با پایتون</p>    
+                        </div>
+                        <div class="seconed-child">
+                            <p>30:22</p>
+                            <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="18" height="16" fill="url(#pattern0_45_241)" fill-opacity="0.6"/>
+                                <defs>
+                                <pattern id="pattern0_45_241" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_45_241" transform="matrix(0.0208333 0 0 0.0234375 0 -0.0625)"/>
+                                </pattern>
+                                <image id="image0_45_241" width="48" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC6ElEQVR4nO2Z30pUURTGf4wnRZqLbPQi9SlqSp+giJluRKKbsrcwi/ImE4Iw0+gmaUi6KiHqASp8gsQrtYsyUvvjXYx2Y2xYBxabg519zp6zDeaDjYPD+tb6ztl7rz8DbbTRhg+UgGHgJrAErAK7wB9Zu/K/V8AEMCQ2wTEITANfgQPHtQncAwZCBF4BngD7GQK31x7wGDhZVPBXgJ8JgXwDngJXgdMi8pisXuAMcA1YALYS7H8Al1sZeCRP3Xb8DqgBHY5cdeB9At+8fO8V3cBby9EacN4D90Vg3eJ+Iz69IEoIvgEc9+UAKAPPE0R4eRP2trlN63DH8jXn48BmCf4B0ATuexAxSkZUrNvGbJu0iK9X8zcLFpXf70BP3q2z5rjn9RPMeiY28mylQStJXXC0zysgvp10suvHAdPWPU8AAQYfFM8UKdFh1TYmSYUSUFc8n9MWgMNWeRAFFBAB24rrXBqjW8rA1DYEFGDwTHGNkwJLysAUZqEFjCmul2kMVpWBqSpDC6gqrpU0Br+UgUlmoQX0WSX3P6Hv/04PAvK2jl1WPihEgOZYyCmiy1WAjy30yHoLeUT0uW4hfYhNG5gFJQnah4izrodYX6OmhyWwiOuu1+iE5RDPImYcORquiWxIGWx5aOtsEb8dbCNgR9lW0zrczFnMJXHOyC1iKt20uJSlmEMmZrGhGX2EwrKK466L4YA8rdjYNBdFo6b8N10bGmTcFxOsS5tXFMrAJ+V/NgtJRRJHTGLmNkXhhfK7k7WpR2aV+go0I49WY9LyOZKXcL5AEZOWr4c+SCMZ82niRc9nomxtG7NeOw6MD0V3gogNT7dTzTqwcfDehrv6TcxZjg5k9FF3zNiRJKnlBL5Zn08+CaNWeo/XtjTgY5Lye6Wf6JTPVSnMGofYj1AQeuRt6GSXdTXlqZ8gAPplYvYlQ+CmtjHlwSmOAEoydLohNfuKdHb7ssznj/LduDQpR+Jn1jba4D/HX/QMlsIw8TX3AAAAAElFTkSuQmCC"/>
+                                </defs>
+                            </svg>
+                        </div> 
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="total-contents">
+        <div class="title-course-txt">
+            <svg width="27" height="27" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="15.5" cy="15" rx="15.5" ry="15" fill="#C6E7FF"/>
+            </svg>
+            <h4>اطلاعات تکمیلی دوره</h4>  
+        </div>
+        <div class="paragraph">
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از  طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و  سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه  درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با  نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان  خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید  داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات  پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+        </div>
+        <div class="course-contacts">
+            <h3>مخاطبین :</h3>
+            <a href="#">متخصصان هوش مصنوعی</a>
+            <a href="#">مهندسان نرم‌افزار</a>
+            <a href="#">دانشجویان و پژوهشگران علم داده هوش مصنوعی</a>
+            <a href="#">مهندسان الکترونیک و سخت‌افزار</a>
+        </div>
+    </div>
+
+    <div id="picture-contents">
+        <div class="title-course-txt">
+            <svg width="27" height="27" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="15.5" cy="15" rx="15.5" ry="15" fill="#C6E7FF"/>
+            </svg>
+            <h4>مدرس دوره</h4>  
+        </div>
+        <div class="pic-profile">
+            <img src="./images/profile.png" alt="">
+            <p>علی احمدی</p>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="logo-socailmedia">
+            <div class="logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div class="social-media">
+                <div class="SM-d1"><img src="./images/instagram.png" alt=""></div>
+                <div class="SM-d2"><img src="./images/telegram.png"alt=""></div>
+                <div class="SM-d3"><img src="./images/linkedin.png" alt=""></div>
+            </div>
+        </div>
+
+        <div class="options">
+            <div>
+                <a href="#" class="subject">درباره فناوران بیرکار </a>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+            </div>
+            <div>
+                <a href="#" class="subject">لینک های سریع</a>
+                <ul>
+                    <li><a href="#">دپارتمان ها </a></li>
+                    <li><a href="#">مسیر های تخصصی</a></li>
+                    <li><a href="#">دوره های آموزشی </a></li>
+                    <li><a href="#">اساتید و مربیان </a></li>
+                    <li><a href="#">شرکت مشاوران افزار آزما</a></li>
+                    <li><a href="#">درباره ما</a></li>
+                </ul>
+            </div>
+            <div class="third-one">
+
+                <div><a href="#" class="subject">ارتباط با ما </a></div>
+                <div class="txt-svg">
+                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.16663 6.33956C2.16663 3.27767 4.76997 0.78125 7.99996 0.78125C11.23 0.78125 13.8333 3.27767 13.8333 6.33956C13.8333 7.81775 13.3839 9.40494 12.5896 10.7762C11.7962 12.1457 10.637 13.3358 9.18697 13.9712C8.43367 14.3013 7.56625 14.3013 6.81295 13.9712C5.36287 13.3358 4.2037 12.1457 3.41033 10.7762C2.61598 9.40494 2.16663 7.81775 2.16663 6.33956ZM7.99996 1.71875C5.33891 1.71875 3.16663 3.77968 3.16663 6.33956C3.16663 7.65023 3.56838 9.08463 4.2891 10.3287C5.01079 11.5745 6.03064 12.5935 7.23639 13.1219C7.72133 13.3344 8.27859 13.3344 8.76353 13.1219C9.96928 12.5935 10.9891 11.5745 11.7108 10.3287C12.4315 9.08463 12.8333 7.65023 12.8333 6.33956C12.8333 3.77968 10.661 1.71875 7.99996 1.71875ZM7.99996 4.84375C7.17153 4.84375 6.49996 5.47335 6.49996 6.25C6.49996 7.02665 7.17153 7.65625 7.99996 7.65625C8.82839 7.65625 9.49996 7.02665 9.49996 6.25C9.49996 5.47335 8.82839 4.84375 7.99996 4.84375ZM5.49996 6.25C5.49996 4.95558 6.61925 3.90625 7.99996 3.90625C9.38067 3.90625 10.5 4.95558 10.5 6.25C10.5 7.54442 9.38067 8.59375 7.99996 8.59375C6.61925 8.59375 5.49996 7.54442 5.49996 6.25Z" fill="#333333"/>
+                    </svg><p>آدرس:سنندج، خیابان پاسداران، حدفاصل ورودی اصلی دانشگاه آزاد اسلامی  و جهادکشاورزی استان</p>
+                </div>
+                <div class="txt-svg">
+                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.8397 1.17514C8.88383 0.919583 9.14153 0.746224 9.41412 0.787597C9.43099 0.790625 9.48528 0.800138 9.51373 0.806077C9.57061 0.817954 9.64997 0.83624 9.7489 0.863256C9.94676 0.917283 10.2232 1.00629 10.5549 1.14887C11.2191 1.43434 12.103 1.93372 13.0202 2.7936C13.9374 3.65347 14.47 4.4821 14.7745 5.10478C14.9266 5.41579 15.0216 5.67492 15.0792 5.8604C15.108 5.95316 15.1275 6.02755 15.1402 6.08088C15.1465 6.10755 15.1511 6.12896 15.1544 6.14478L15.1582 6.16427C15.2023 6.41983 15.0191 6.6714 14.7465 6.71278C14.4747 6.75403 14.2186 6.58151 14.1734 6.32715C14.172 6.32033 14.1682 6.30198 14.1641 6.28467C14.1559 6.25006 14.1416 6.19517 14.1191 6.12257C14.074 5.97736 13.9956 5.76153 13.8655 5.49548C13.6056 4.96404 13.1383 4.23017 12.3131 3.45651C11.4878 2.68284 10.705 2.24472 10.1382 2.00108C9.85437 1.87911 9.62415 1.80565 9.46925 1.76335C9.39182 1.74221 9.29449 1.72126 9.25757 1.71355C8.98625 1.67117 8.7957 1.42997 8.8397 1.17514Z" fill="#333333"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.99054 3.33105C9.0664 3.08213 9.34314 2.938 9.60866 3.00912L9.4713 3.45983C9.60866 3.00912 9.60866 3.00912 9.60866 3.00912L9.60962 3.00937L9.61064 3.00965L9.61286 3.01026L9.61803 3.01171L9.63122 3.01556C9.64127 3.01857 9.65383 3.0225 9.66879 3.02748C9.69873 3.03744 9.73831 3.0516 9.78684 3.0711C9.88397 3.11013 10.0167 3.17039 10.1797 3.26083C10.506 3.44188 10.9515 3.74262 11.4748 4.23323C11.9981 4.72384 12.3189 5.14145 12.512 5.44737C12.6085 5.60019 12.6727 5.7246 12.7144 5.81566C12.7352 5.86116 12.7503 5.89826 12.7609 5.92633C12.7662 5.94036 12.7704 5.95213 12.7736 5.96155L12.7777 5.97392L12.7793 5.97876L12.7799 5.98085L12.7802 5.9818C12.7802 5.9818 12.7805 5.98271 12.2997 6.11148L12.7805 5.98271C12.8563 6.23163 12.7026 6.49107 12.4371 6.5622C12.1738 6.63271 11.8995 6.49161 11.8209 6.24657L11.8185 6.23984C11.8149 6.23045 11.8076 6.21196 11.7952 6.18495C11.7706 6.13099 11.7258 6.04273 11.6514 5.92486C11.5028 5.68939 11.2343 5.33361 10.7677 4.89614C10.301 4.45867 9.92152 4.20698 9.67036 4.06762C9.54464 3.99786 9.45048 3.95593 9.39293 3.9328C9.36412 3.92123 9.3444 3.91433 9.33438 3.911L9.3272 3.90869C9.06582 3.83502 8.91532 3.57786 8.99054 3.33105Z" fill="#333333"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33826 2.75437C4.45831 1.70432 6.3484 1.78415 7.12828 3.09422L7.56095 3.82105C8.07023 4.67657 7.85321 5.75599 7.10767 6.46347C7.09774 6.47623 7.04512 6.54806 7.03856 6.67357C7.0302 6.83377 7.09089 7.20426 7.70317 7.77827C8.31526 8.3521 8.71039 8.40914 8.88134 8.40134C9.01533 8.39524 9.09201 8.34587 9.10563 8.33655C9.86028 7.63762 11.0117 7.43416 11.9242 7.9116L12.6995 8.31724C14.0969 9.04837 14.1821 10.8203 13.062 11.8704C12.4629 12.432 11.6663 12.9311 10.7302 12.9644C9.34287 13.0137 7.03938 12.6778 4.75819 10.5392C2.477 8.40058 2.11874 6.24106 2.17134 4.94047C2.20682 4.06285 2.73915 3.31603 3.33826 2.75437ZM6.25506 3.5511C5.85572 2.88025 4.78259 2.72613 4.04537 3.41728C3.52847 3.90187 3.19242 4.43675 3.17062 4.97599C3.12676 6.06058 3.41239 7.95168 5.4653 9.87628C7.51821 11.8009 9.53538 12.0687 10.6923 12.0275C11.2675 12.0071 11.838 11.6921 12.3549 11.2075C13.0921 10.5163 12.9277 9.51026 12.2122 9.13588L11.4369 8.73025C10.9546 8.47792 10.2772 8.56399 9.80165 9.0098C9.75493 9.05356 9.45758 9.31367 8.92993 9.33774C8.38978 9.36237 7.73596 9.13484 6.99607 8.44119C6.25593 7.74731 6.01331 7.13418 6.03976 6.62772C6.0656 6.13303 6.34308 5.85452 6.38951 5.81099C6.86505 5.36517 6.95689 4.73006 6.68774 4.27793L6.25506 3.5511Z" fill="#333333"/>
+                    </svg><p>شماره تماس:۰۹۰۲۵۱۵۹۴۷۱</p>
+                </div>
+                <div class="txt-svg">
+                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_40_154)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.29758 0.78125H8.7025C9.45772 0.781235 10.0749 0.781223 10.5621 0.842637C11.0714 0.906831 11.513 1.04576 11.8654 1.37619C12.2179 1.70662 12.3661 2.12058 12.4346 2.59805C12.4682 2.83287 12.4846 3.09987 12.4925 3.40009C13.198 3.50679 13.7762 3.71683 14.2392 4.1509C14.7381 4.61863 14.9595 5.21172 15.0646 5.94448C15.1667 6.65649 15.1667 7.56626 15.1667 8.71486V8.78538C15.1667 9.93398 15.1667 10.8438 15.0646 11.5558C14.9595 12.2885 14.7381 12.8816 14.2392 13.3493C13.7403 13.8171 13.1077 14.0246 12.3261 14.1232C11.5666 14.2189 10.5962 14.2189 9.37098 14.2189H6.6291C5.40393 14.2189 4.4335 14.2189 3.67403 14.1232C2.89241 14.0246 2.25978 13.8171 1.76087 13.3493C1.26196 12.8816 1.04055 12.2885 0.935464 11.5558C0.833355 10.8438 0.833364 9.93398 0.833374 8.78538V8.71486C0.833364 7.56626 0.833355 6.65649 0.935464 5.94448C1.04055 5.21172 1.26196 4.61863 1.76087 4.1509C2.22388 3.71683 2.80205 3.50679 3.50754 3.40009C3.51548 3.09987 3.53184 2.83287 3.56552 2.59805C3.63399 2.12058 3.78218 1.70662 4.13464 1.37619C4.48711 1.04576 4.92866 0.906831 5.43796 0.842637C5.92521 0.781223 6.54236 0.781235 7.29758 0.78125ZM3.50004 4.35383C3.01272 4.44555 2.70387 4.59266 2.46798 4.81381C2.18584 5.07832 2.01672 5.4406 1.92655 6.0694C1.83444 6.71169 1.83337 7.55836 1.83337 8.75012C1.83337 9.94188 1.83444 10.7886 1.92655 11.4308C2.01672 12.0596 2.18584 12.4219 2.46798 12.6864C2.75012 12.9509 3.13655 13.1095 3.80727 13.194C4.49238 13.2804 5.39549 13.2814 6.66671 13.2814H9.33337C10.6046 13.2814 11.5077 13.2804 12.1928 13.194C12.8635 13.1095 13.25 12.9509 13.5321 12.6864C13.8142 12.4219 13.9834 12.0596 14.0735 11.4308C14.1656 10.7886 14.1667 9.94188 14.1667 8.75012C14.1667 7.55836 14.1656 6.71169 14.0735 6.0694C13.9834 5.4406 13.8142 5.07832 13.5321 4.81381C13.2962 4.59266 12.9874 4.44555 12.5 4.35383V5.07906C12.5 5.1079 12.5001 5.13639 12.5001 5.16454C12.5007 5.65583 12.5011 6.04496 12.327 6.39355C12.1528 6.74213 11.8336 6.99094 11.4307 7.30505C11.4076 7.32305 11.3843 7.34126 11.3606 7.35972L10.8558 7.7541C10.2649 8.21577 9.78597 8.58995 9.36326 8.84483C8.92293 9.11033 8.49409 9.27805 8.00004 9.27805C7.50599 9.27805 7.07716 9.11033 6.63683 8.84483C6.21412 8.58995 5.73519 8.21578 5.14429 7.75412L4.63946 7.35972C4.61583 7.34126 4.59247 7.32305 4.56938 7.30505C4.16644 6.99094 3.84728 6.74214 3.67313 6.39355C3.49897 6.04496 3.49942 5.65583 3.49998 5.16454C3.50001 5.13639 3.50004 5.1079 3.50004 5.07906L3.50004 4.35383ZM5.57121 1.77178C5.1728 1.82199 4.97744 1.91189 4.84175 2.0391C4.70606 2.16632 4.61017 2.34946 4.5566 2.72297C4.5011 3.10997 4.50004 3.62518 4.50004 4.375V5.07906C4.50004 5.69863 4.51109 5.86054 4.57872 5.9959C4.64635 6.13127 4.77195 6.24288 5.27964 6.63951L5.7594 7.01432C6.38137 7.50024 6.81319 7.83651 7.17776 8.05633C7.53067 8.26912 7.76999 8.34055 8.00004 8.34055C8.23009 8.34055 8.46941 8.26912 8.82232 8.05633C9.18689 7.83651 9.61871 7.50024 10.2407 7.01432L10.7204 6.63951C11.2281 6.24288 11.3537 6.13127 11.4214 5.9959C11.489 5.86054 11.5 5.69863 11.5 5.07906V4.375C11.5 3.62518 11.499 3.10997 11.4435 2.72297C11.3899 2.34946 11.294 2.16632 11.1583 2.0391C11.0226 1.91189 10.8273 1.82199 10.4289 1.77178C10.0161 1.71975 9.46652 1.71875 8.66671 1.71875H7.33337C6.53357 1.71875 5.98401 1.71975 5.57121 1.77178ZM6.16671 3.75C6.16671 3.49112 6.39057 3.28125 6.66671 3.28125H9.33337C9.60952 3.28125 9.83337 3.49112 9.83337 3.75C9.83337 4.00888 9.60952 4.21875 9.33337 4.21875H6.66671C6.39057 4.21875 6.16671 4.00888 6.16671 3.75ZM6.83337 5.625C6.83337 5.36612 7.05723 5.15625 7.33337 5.15625H8.66671C8.94285 5.15625 9.16671 5.36612 9.16671 5.625C9.16671 5.88388 8.94285 6.09375 8.66671 6.09375H7.33337C7.05723 6.09375 6.83337 5.88388 6.83337 5.625Z" fill="#333333"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_40_154">
+                        <rect width="16" height="15" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg><p>ایمیل:birkar.academy.ir@gmail.com</p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="payment">
+            <img src="./images/zarinPal.png" alt="">
+            <img src="./images/Enemad.png" alt="">
+        </div>
+        <div class="button-top">
+            <a href="#">بازگشت به بالا</a>
+            <svg width="14" height="38" viewBox="0 0 16 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.7071 0.292892C8.31658 -0.0976296 7.68342 -0.0976295 7.29289 0.292892L0.928931 6.65685C0.538406 7.04738 0.538406 7.68054 0.928931 8.07107C1.31946 8.46159 1.95262 8.46159 2.34314 8.07107L8 2.41422L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.7071 0.292892ZM9 41L9 1L7 1L7 41L9 41Z" fill="#333333"/>
+            </svg>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
